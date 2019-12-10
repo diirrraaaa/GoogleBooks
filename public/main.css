@@ -1,0 +1,17 @@
+body{
+  text-align: center;
+}
+.top{
+  font-family: 'Playfair Display', serif;
+  border: 5px outset grey;
+  background-color: #824c52;
+  color: rgb(189, 189, 189);
+}
+form{
+  margin-top: 81px;
+}
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}

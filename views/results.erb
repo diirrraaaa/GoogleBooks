@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One|Playfair+Display&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top">
+      <h1>Welcome to the Nadira Book Store</h1>
+      <h4>"We will help you find whatever you need"</h4>
+    </div>
+    <form action="/" method="POST">
+     <input name="query" >
+     <button>Search</button>
+    </form>
+<div id="grid-container">
+    <% @results.each do |result|%>
+    <div class="book-results">
+      <h3><%= result.title %></h3>
+      <h4><%= result.authors%></h4>
+      <img src="<%= result.image_link %>"/>
+      <a href="<%= result.info_link %>" />
+    </div>
+    <% end %>
+</div>
+
+
+  </body>
+</html>
