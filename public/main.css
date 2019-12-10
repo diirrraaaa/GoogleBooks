@@ -1,5 +1,6 @@
 body{
   text-align: center;
+  background-color: rgb(222, 222, 222);
 }
 .top{
   font-family: 'Playfair Display', serif;
@@ -8,12 +9,20 @@ body{
   color: rgb(189, 189, 189);
 }
 form{
-  margin-top: 81px;
+  margin-top: 36px;
 }
 #grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 5px;
+
+}
+.book-results{
+  width: 284px;
+   padding: 10px 10px 20px 10px;
+   border: 1px solid #BFBFBF;
+   background-color: #824c52;
+   box-shadow: 10px 10px 5px #aaaaaa;
 }
 .pagination {
   display: inline-block;
